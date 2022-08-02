@@ -10,7 +10,7 @@
     </parent>
     <groupId>gabriellourenco</groupId>
     <artifactId>aws-project</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>aws-project</name>
     <description>aws-project</description>
     <properties>
