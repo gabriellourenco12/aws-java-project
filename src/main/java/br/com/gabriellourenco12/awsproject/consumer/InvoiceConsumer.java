@@ -36,7 +36,7 @@ public class InvoiceConsumer {
 
     @JmsListener(destination = "${aws.sqs.queue.invoice.events.name}")
     public void receiveS3Event(TextMessage textMessage) throws JMSException, IOException {
-        log.info("Message received - Id: {} - ", textMessage.getText());
+        log.info("Message received - Id: {}", textMessage.getText());
 
         SnsMessage snsMessage = objectMapper.readValue(textMessage.getText(), SnsMessage.class);
 
@@ -57,7 +57,7 @@ public class InvoiceConsumer {
             String invoiceFile = downloadObject(bucketName, objectKey);
 
             Invoice invoice = objectMapper.readValue(invoiceFile, Invoice.class);
-            log.info("Invoice received: {} - ", invoice.getInvoiceNumber());
+            log.info("Invoice received: {}", invoice.getInvoiceNumber());
 
             invoiceRepository.save(invoice);
 
