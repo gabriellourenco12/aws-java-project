@@ -59,7 +59,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#software-architecture">Software Architecture</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -128,12 +128,12 @@ This is an example of how to list things you need to use the software and how to
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- Software Architecture -->
+## Software Architecture
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+These are the components used to implement the system.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+![Project Architecture][architecture-screenshot]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,7 +169,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@gabriellournco_](https://twitter.com/gabriellournco_) - gabriellourenco12ti@gmail.com
+Gabriel Lourenço - [@gabriellournco_](https://twitter.com/gabriellournco_) - gabriellourenco12ti@gmail.com
 
 Project Link: [https://github.com/gabriellourenco12/aws-java-project](https://github.com/gabriellourenco12/aws-java-project)
 
@@ -201,6 +201,7 @@ Project Link: [https://github.com/gabriellourenco12/aws-java-project](https://gi
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/gabriellourenco12
 [product-screenshot]: images/screenshot.png
+[architecture-screenshot]: images/screenshot2.png
 [Java]: https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white
 [Java-url]: https://www.java.com/
 [Spring.io]: https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white
