@@ -103,26 +103,32 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* LocalStack
   ```sh
-  npm install npm@latest -g
+  pip install localstack
   ```
-
+  
+* Docker
+  ```sh
+  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  ```
+  
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/gabriellourenco12/aws-java-project.git
    ```
-3. Install NPM packages
+2. Run localstack in docker
    ```sh
-   npm install
+   docker run --rm -p 4566:4566 -p 4571:4571 localstack/localstack -e "SERVICES=sns, sqs, dynamodb, s3" 
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Config your environment variables to local
+   ```sh
+   spring.profiles.active=local
    ```
+
+4. Run the application locally
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
